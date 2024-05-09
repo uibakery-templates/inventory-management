@@ -1,0 +1,40 @@
+id: '16938347143410.5231824858175316'
+definitionId: card
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 14
+      y: 0
+      w: 5
+      h: 24
+  xs:
+    gridItem:
+      x: 0
+      y: 150
+      w: 24
+      h: 80
+properties:
+  name: card2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showHeader: false
+  showLoading:
+    value: false
+    dataValue: '{{actions.getMetrics.loading}}'
+    withData: true
+actions: {}
+index: 1
+slots:
+  - id: '16938347143410.9507363582956085'
+    name: header
+    children: []
+  - id: '16938347143410.6726999004243337'
+    name: body
+    children:
+      - text.yml
+      - percent.yml
+  - id: '16938347143410.36446218128695196'
+    name: footer
+    children: []

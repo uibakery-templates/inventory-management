@@ -1,0 +1,77 @@
+id: '16938306875020.6318668710808013'
+name: getGroupedInventory
+nameConfigured: true
+steps:
+  - id: '16938307032320.8764622025109376'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16938306312200.03129801073063665'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16938344995990.026588939105199216'
+    type: customAsyncCode
+    name: filter
+    params:
+      - type: asyncCode
+        value: ./filter.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '16938394140390.9897124953763308'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '16938388984910.13815853892539343'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getGroupedInventory.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getGroupedInventory.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getGroupedInventory.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: false
+kind: workflow

@@ -1,0 +1,1 @@
+return {{data}}.filter(i => i.name.toLowerCase().indexOf({{ui.input.value.toLowerCase()}}) !== -1)

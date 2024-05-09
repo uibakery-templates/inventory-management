@@ -1,0 +1,45 @@
+id: '16938458294900.7335804717055383'
+definitionId: horizontalMenu
+parentSlotId: '16938458026180.3173386739250852'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 12
+      h: 9
+    color:
+      value: white
+      dataValue: basic
+      withData: false
+    logo:
+      url: https://sauibakeryprod.blob.core.windows.net/teamplates-covers/logo.png
+      uploadUrl: ''
+      name: ''
+      active: url
+  xs:
+    gridItem:
+      x: 0
+      y: 10
+      w: 24
+      h: 10
+properties:
+  autoSyncItems: false
+  name: horizontalMenu
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  items: |-
+    [
+      {
+        title: 'Inventory',
+        link: '/home'
+      },
+      {
+        title: 'Users',
+        link: '/home1'
+      }
+    ]
+actions: {}
+index: 0
+slots: []

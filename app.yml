@@ -1,0 +1,28 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: |-
+    <style>
+    .no-border nb-card {
+      border: none!important;  
+    }
+      
+      .fix-height p {
+        line-height: 1.2em !important;
+      }
+      
+      .no-shadow button {
+        filter: none!important;
+      }
+    </style>
+  title: Inventory Management Dashboard
+  description: ''
+  breakpoints: []
+  rendererCachingEnabled: false
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: compact
+internalType: project

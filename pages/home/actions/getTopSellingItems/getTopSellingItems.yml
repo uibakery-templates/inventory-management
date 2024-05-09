@@ -1,0 +1,65 @@
+id: '16938379484940.6674570425881805'
+name: getTopSellingItems
+nameConfigured: true
+steps:
+  - id: '16938379615210.3352011337495764'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16938306312200.03129801073063665'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16938380109210.6644040155639372'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getTopSellingItems.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getTopSellingItems.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getTopSellingItems.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: false
+kind: workflow

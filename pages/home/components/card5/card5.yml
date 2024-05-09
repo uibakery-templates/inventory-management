@@ -1,0 +1,39 @@
+id: '16938444814850.022378176308869513'
+definitionId: card
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 12
+      y: 136
+      w: 12
+      h: 105
+  xs:
+    gridItem:
+      x: 0
+      y: 839
+      w: 24
+      h: 80
+properties:
+  name: card5
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showLoading:
+    value: false
+    dataValue: '{{actions.getTopInventoryCategoriesByAvailability.loading}}'
+    withData: true
+actions: {}
+index: 6
+slots:
+  - id: '16938444814850.026244260504119765'
+    name: header
+    children:
+      - heading3.yml
+  - id: '16938444814850.6823094663147513'
+    name: body
+    children:
+      - chart.yml
+  - id: '16938444814850.023744931219087384'
+    name: footer
+    children: []

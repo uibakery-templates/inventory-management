@@ -1,0 +1,65 @@
+id: '16938392607140.42269102188274665'
+name: getGroupedInventoriesForTree
+nameConfigured: true
+steps:
+  - id: '16938392802860.794279865923956'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16938306875020.6318668710808013'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16938392943600.6475409993711472'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getGroupedInventoriesForTree.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getGroupedInventoriesForTree.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getGroupedInventoriesForTree.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+kind: workflow

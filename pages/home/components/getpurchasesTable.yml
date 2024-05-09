@@ -1,0 +1,158 @@
+id: '16938388207710.9548532341991325'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 136
+      w: 12
+      h: 105
+  xs:
+    gridItem:
+      x: 0
+      y: 350
+      w: 24
+      h: 80
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.getPurchases.data}}'
+  name: getpurchasesTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Latest Purchases
+  showLoading:
+    withData: true
+    dataValue: '{{actions.getPurchases.loading}}'
+    value: false
+  limit: '11'
+  serverSidePagination: false
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+  rowHeight: small
+actions: {}
+index: 3
+slots:
+  - id: '16938388207710.960709666178613'
+    name: columns
+    children:
+      - id: '16938389996330.6831234777271236'
+        definitionId: atomicNumber
+        parentSlotId: '16938388207710.960709666178613'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber
+          prop: purchase_id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          title: ID
+        index: 0
+        slots: []
+      - id: '16938389996330.9044714989896372'
+        definitionId: atomicString
+        parentSlotId: '16938388207710.960709666178613'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString
+          prop: customer_name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 1
+        slots: []
+      - id: '16938389996330.7480583148622268'
+        definitionId: atomicString
+        parentSlotId: '16938388207710.960709666178613'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString2
+          prop: item_purchased
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 2
+        slots: []
+      - id: '16938389996330.5293370334134393'
+        definitionId: atomicNumber
+        parentSlotId: '16938388207710.960709666178613'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber2
+          prop: quantity
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 3
+        slots: []
+      - id: '16938389996330.7622994161866892'
+        definitionId: atomicDateTime
+        parentSlotId: '16938388207710.960709666178613'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime
+          prop: purchase_date
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 4
+        slots: []
+      - id: '16938389996330.8158879971497797'
+        definitionId: atomicCurrency
+        parentSlotId: '16938388207710.960709666178613'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicCurrency
+          prop: total_cost
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+          title: Total revenue
+        index: 5
+        slots: []

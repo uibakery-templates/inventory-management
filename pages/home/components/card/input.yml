@@ -1,0 +1,38 @@
+id: '16938338046490.8092265501140576'
+definitionId: stringEdit
+parentSlotId: '16938338338280.23965203394367807'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 8
+      h: 10
+  xs:
+    gridItem:
+      x: 11
+      y: 10
+      w: 13
+      h: 10
+properties:
+  name: input
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  labelConfig:
+    text: ''
+    position: horizontal
+    align: left
+  placeholder: Filter stock
+actions:
+  valueChange:
+    - action: '16938392607140.42269102188274665'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  enter: []
+  focusEvent: []
+  blurEvent: []
+  init: []
+index: 0
+slots: []

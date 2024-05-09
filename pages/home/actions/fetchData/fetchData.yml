@@ -1,0 +1,32 @@
+id: '16938388984910.13815853892539343'
+name: fetchData
+nameConfigured: true
+steps:
+  - id: '16938388984910.5299290781245987'
+    type: draft
+    name: newStep
+    params: []
+    level: 0
+    fallthroughError: false
+    isChanged: false
+singleStep: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.fetchData.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.fetchData.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.fetchData.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: false
+kind: folder

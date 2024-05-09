@@ -1,0 +1,24 @@
+id: '16938428260750.6342065853796335'
+definitionId: heading
+styles:
+  xl:
+    fontSize:
+      customValue: 12
+      customUnit: px
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 10
+properties:
+  name: heading2
+  text: Top Selling Items
+  verticalAlignment: middle
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  type: h5
+parentSlotId: '16938428260750.5965629555668073'
+index: 0
+actions: {}
+slots: []

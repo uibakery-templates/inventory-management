@@ -1,0 +1,78 @@
+id: '16938396559260.755609722224438'
+name: getTopInventoryCategoriesByAvailability
+nameConfigured: true
+steps:
+  - id: '16938396612260.26014774974597854'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16938306875020.6318668710808013'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16938398870770.7202766227199304'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16938404905250.4713161563560804'
+    type: customAsyncCode
+    name: code2
+    params:
+      - type: asyncCode
+        value: ./code2.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.getTopInventoryCategoriesByAvailability.name}}"?
+  showSuccessToast: false
+  successToast: >-
+    Action "{{actions.getTopInventoryCategoriesByAvailability.name}}"
+    successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getTopInventoryCategoriesByAvailability.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+kind: workflow
